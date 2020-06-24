@@ -1,4 +1,4 @@
-Nesatmo-s6-auto will allow you to store Netatmo Weather station metrics in any InfluxDB server.
+Nesatmo will allow you to store Netatmo Weather station metrics in any InfluxDB server.
 
 ### How does it works?
 
@@ -9,8 +9,7 @@ Send the data to InfluxDB server ;
 ### Other info
 
 Based on Alpine so that the image is as light as possible.
-Uses s6-overlays.
-Automatic build support (work in progress).
+Automatic build support.
 Once the data is inside InfluxDB, it can be seen with Grafana (for example).
 
 ### How to use
