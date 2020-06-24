@@ -1,6 +1,5 @@
 FROM alpine:arm32v7
 RUN apk add php-cli php-curl php-json unzip
-RUN tar xzf /tmp/s6-overlay-armhf.tar.gz -C /
 ADD https://github.com/Netatmo/Netatmo-API-PHP/archive/master.zip /tmp/
 RUN unzip /tmp/master.zip -d /
 COPY cron.sh /
