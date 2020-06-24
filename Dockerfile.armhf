@@ -6,5 +6,4 @@ COPY cron.sh /
 COPY my_weather_docker.php /
 RUN echo "*/10 * * * * /usr/bin/php /my_weather_docker.php" > /etc/crontabs/root
 RUN rm /tmp/master.zip
-ENTRYPOINT ["/init"]
 CMD ["/cron.sh"]
