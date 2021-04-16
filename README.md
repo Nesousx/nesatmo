@@ -6,6 +6,10 @@ It pulls data from the Netatmo API using PHP ;
 Change the data format so it can be used with InfluxDB ;
 Send the data to InfluxDB server ;
 
+### Requirements
+
+You need an existing Grafana / InfluxDB installation.
+
 ### Other info
 
 Based on Alpine so that the image is as light as possible.
