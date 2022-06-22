@@ -62,10 +62,10 @@ function payload($device, $measure, $sensor) {
 	
 	$value = reset($values);
 	$ts = $module["dashboard_data"]["time_utc"];
-	$station_name = $device["station_name"];
+	$station_name = str_replace($station_name, " ", "\ ");
 	
 	// Payload finale
-	return "{$measure},sensor={$sensor},station={$station_name} value={$value} {$ts}000000000";
+	return "{$measure},sensor=\"{$sensor}\",station=\"{$station_name}\" value={$value} {$ts}000000000";
 }
 
 // Ici la liste de mesures qu'on veut, depuis les sondes qu'on veut
