@@ -6,6 +6,8 @@ As of June 22nd 2022, I noticed an issue. The way the API works changed, and the
 
 I'll see if I can get a proper fix working!
 
+UPDATE : should be fixed with code change on June 22nd 2022.
+
 ### How does it works?
 
 It pulls data from the Netatmo API using PHP ;
