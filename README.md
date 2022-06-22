@@ -1,5 +1,11 @@
 Nesatmo will allow you to store Netatmo Weather station metrics in any InfluxDB server.
 
+### IMPORTANT, please read!
+
+As of June 22nd 2022, I noticed an issue. The way the API works changed, and there is a space added by Netatmo after the station's name field. So, in order to make works, you need to add a backslash after your station's name on Netatmo site, ie. your station was called : "NesoWeath", it has to be renammed to "Nesoweath\".
+
+I'll see if I can get a proper fix working!
+
 ### How does it works?
 
 It pulls data from the Netatmo API using PHP ;
